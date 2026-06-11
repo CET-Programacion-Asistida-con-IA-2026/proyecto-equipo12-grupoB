@@ -207,7 +207,8 @@ section h2::after {
   width: 100%;
   border-radius: 14px;
   object-fit: cover;
-  max-height: 300px;
+  object-position:center 20%;
+  max-height: 400px;
   display: block;
   border: 3px solid var(--turquesa-claro);
   box-shadow: 0 6px 24px rgba(46,125,125,0.12);
