@@ -72,9 +72,12 @@ header::before {
 }
 
 header .logo-ola {
+  position: absolute;
+  top: 10px; 
+  left: 30px;
   display: block;
-  margin: 0 auto 22px;
-  width: 80px;
+  width: 100px; /* Tamaño de la ola */
+  z-index: 2; /* Encima del fondo */
 }
 
 header h1 {
@@ -521,7 +524,7 @@ footer {
 
 .footer-ola {
   display: block;
-  margin: 0 auto 16px;
+  margin: -10px auto 10px; /* -15px sube el logo, auto lo mantiene centrado, 24px espacio abajo */ 
   width: 60px;
 }
 
