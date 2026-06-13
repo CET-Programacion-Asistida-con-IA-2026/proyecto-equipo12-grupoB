@@ -1,16 +1,17 @@
-# Maquillaje Seguro - Equipo 12B 
-## Sitio Web de Impacto Social
+# Maquillaje & Microplásticos - Equipo 12B 
+## Sitio Web con Impacto Social
 En este repositorio, se presenta el sitio web "Maquillaje & Microplásticos" realizado durante el curso de programación frontend de CET.
 
 ## 📄 Descripción del proyecto
 **¿Sabías que tu rutina de belleza diaria podría estar contaminando tu cuerpo y los océanos?**
+
 La industria cosmética convencional utiliza ingredientes sintéticos, incluidos los microplásticos, metales pesados y disruptores endocrinos. Estos ingredientes se encuentran en productos comunes como labiales, máscaras de pestañas y bases de maquillaje.
 
-*  **Impacto Ecológico (Microplásticos):** Cuando nos desmaquillamos o lavamos el rostro, estas partículas diminutas no son filtradas por las plantas de tratamiento de agua y terminan en los ríos y océanos. Allí, son ingeridas por la fauna marina, afectando la biodiversidad y entrando en la cadena alimentaria humana.
+*  **Impacto Ecológico:** Cuando nos desmaquillamos o lavamos el rostro, estas partículas diminutas no son filtradas por las plantas de tratamiento de agua y terminan en los ríos y océanos. Allí, son ingeridas por la fauna marina, afectando la biodiversidad y entrando en la cadena alimentaria humana.
 
 * **Salud Humana:** Estos químicos y plásticos invisibles se van acumulando en nuestro cuerpo con el tiempo. Esto puede provocar desde alergias en la piel hasta alteraciones en nuestras hormonas y otros problemas de salud a largo plazo.
 
-El problema es la falta de transparencia en el etiquetado y la desconexión entre la "estética" personal y la "ética" ambiental.
+El problema principal radica en la falta de transparencia en el etiquetado y en la desconexión que existe entre el cuidado personal y la responsabilidad ambiental.
 
 ---
 
@@ -19,7 +20,7 @@ El problema es la falta de transparencia en el etiquetado y la desconexión entr
 Este proyecto se alinea directamente con los siguientes ODS de la Agenda 2030:
 
 ### ODS 14: Vida Submarina 
-El objetivo central de la plataforma es reducir el flujo de microplásticos y contaminantes químicos que llegan al océano desde la industria cosmética. Al educar a las usuarias sobre qué productos evitar, contribuimos a disminuir la contaminación marina y a proteger la biodiversidad de los ecosistemas acuáticos.
+El objetivo central de la plataforma es reducir el flujo de microplásticos y contaminantes químicos que llegan al océano desde la industria cosmética. Al educar a los usuarios sobre qué productos evitar, contribuimos a disminuir la contaminación marina y a proteger la biodiversidad de los ecosistemas acuáticos.
 
 ### ODS 6: Agua Limpia y Saneamiento 
 Los microplásticos en los cosméticos contaminan los suministros de agua dulce. Al reducir el consumo de estos productos, ayudamos a preservar la calidad del agua potable y facilitamos los procesos de saneamiento, asegurando que el agua utilizada para higiene no se convierta en un vehículo de contaminación.
@@ -28,13 +29,13 @@ Los microplásticos en los cosméticos contaminan los suministros de agua dulce.
 La plataforma fomenta el consumo responsable al capacitar a las usuarias para elegir productos seguros y sostenibles, presionando a la industria hacia métodos de producción más limpios.
 
 ---
-## 💡 Solución Tecnológica: La Plataforma "Conciencia Cosmética"
+## 💡 Solución Tecnológica:
 
 Para estructurar nuestra idea, desarrollamos el siguiente documento que resume nuestro público objetivo, el problema central y las funcionalidades clave de la web:
 
 ![One Page Plan - Belleza Consciente, Oceano Vivo](one-page-plan.png)
 
-**Funcionalidades Clave:**
+### Funcionalidades Clave ###
 
 * **Verificador Interactivo de Productos:** Desarrollamos un buscador con JavaScript donde el usuario ingresa un producto (ej. "exfoliante" o "rímel") y el sistema evalúa en tiempo real si suele contener microplásticos, devolviendo alertas visuales (rojo, amarillo, verde) y recomendaciones.
 * **Guía de Aprobación ANMAT:** Un paso a paso claro para que cualquier persona pueda verificar si su cosmético está habilitado legalmente.
@@ -44,16 +45,13 @@ Para estructurar nuestra idea, desarrollamos el siguiente documento que resume n
 La plataforma prioriza una interfaz limpia, visual y fácil de usar, permitiendo que la toma de decisiones conscientes sea accesible para todas.
 
 ---
-## 🎨 Moodboard del Proyecto
+## 🎨 Diseño (Moodboard)
+### Explicación del Concepto Visual:
+Nuestra identidad visual prioriza una estética limpia y minimalista. Nos inspiramos en los colores de los ecosistemas marinos que buscamos proteger, creando un contraste directo con los tonos de la contaminación.
 
-A continuación, se presenta el moodboard que fue realizado para definir la estética y el enfoque visual de nuestro sitio web.
+*(Nota: Podés visualizar la imagen completa abriendo el archivo `moodboard.png` que se encuentra en la carpeta principal de este repositorio).*
 
-![Moodboard - Grupo 12B](moodboard.png)
-
-### Explicación del Concepto Visual: "Estética con Impacto"
-
-Este moodboard combina la estética de la belleza cosmética con el concepto del plástico oculto, 
-utilizando nuestra paleta de colores oficial:
+Para nuestra interfaz, definimos las siguientes bases:
 | Elemento | Descripción e Inspiración |
 | :--- | :--- |
 | **🎨 Paleta de Colores** | Tonos turquesas (agua limpia), tonos corales (arena) y marrones (contaminación). Buscamos un contraste natural y minimalista. |
