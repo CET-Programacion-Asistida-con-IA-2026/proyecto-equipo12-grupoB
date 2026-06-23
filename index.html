@@ -48,58 +48,33 @@
 
       <div class="verificar-grid">
 
-        <!-- Columna ANMAT -->
-        <div class="verificar-bloque">
-          <h3>¿Cómo verificar la aprobación ANMAT?</h3>
-          <p>Antes de comprar cualquier cosmético, podés comprobar su habilitación oficial. Es rápido y gratuito.</p>
-          <ol class="pasos-anmat">
-            <li>
-              <span class="paso-num">1</span>
-              <span>Entrá a <a href="https://www.anmat.gob.ar" target="_blank" rel="noopener">anmat.gob.ar</a> o buscá "ANMAT consulta cosméticos".</span>
-            </li>
-            <li>
-              <span class="paso-num">2</span>
-              <span>Hacé clic en <strong>Consultas en Línea → Cosméticos e Higiene Personal</strong>.</span>
-            </li>
-            <li>
-              <span class="paso-num">3</span>
-              <span>Ingresá el nombre del producto o la marca para ver si tiene registro vigente.</span>
-            </li>
-            <li>
-              <span class="paso-num">4</span>
-              <span>En el packaging buscá el número tipo <strong>RNPA</strong> o disposición ANMAT.</span>
-            </li>
-          </ol>
-          <p class="aviso-anmat">⚠️ Un producto sin número ANMAT puede contener ingredientes no permitidos en Argentina.</p>
-        </div>
-
         <!-- Columna consulta microplásticos -->
         <div class="verificar-bloque">
           <h3>¿Tu producto tiene microplásticos?</h3>
-          <p>Ingresá el nombre del producto y te ayudamos a identificar si suele contener microplásticos y cuáles son sus alternativas más sustentables.</p>
+          <p>Buscá en Google el nombre de tu producto + ingredientes y pegalos acá, te ayudamos a identificar si contiene microplásticos!</p>
 
           <div class="formulario">
             <input
               type="text"
               id="productoInput"
-              placeholder="Ej: exfoliante facial, rímel, base líquida..."
+              placeholder="ingredientes"
             />
-            <button id="btnConsultar" onclick="consultarProducto()">Consultar</button>
+            <button id="btnConsultar" onclick="consultarIngredientes()">Consultar</button>
           </div>
 
           <div id="resultado"></div>
 
           <div class="tips-grid">
             <div class="tip-item">
-              <strong>🔴 Contienen microplásticos frecuentemente</strong>
+              <strong>Contienen microplásticos frecuentemente</strong>
               <p>Exfoliantes con microesferas, glitter cosmético, bases con "smooth finish"</p>
             </div>
             <div class="tip-item">
-              <strong>🟡 Revisar etiqueta</strong>
+              <strong>Revisar etiqueta</strong>
               <p>Rímel, sombras en crema, contornos líquidos</p>
             </div>
             <div class="tip-item">
-              <strong>🟢 Generalmente seguros</strong>
+              <strong>Generalmente seguros</strong>
               <p>Exfoliantes con azúcar/sal, maquillaje en polvo mineral, labiales con ceras naturales</p>
             </div>
           </div>
