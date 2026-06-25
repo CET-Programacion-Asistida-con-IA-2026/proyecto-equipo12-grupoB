@@ -263,8 +263,10 @@ section h2::after {
 /* Cards grid */
 .cards-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-template-columns: repeat(2, minmax(220px, 1fr));
   gap: 22px;
+  justify-items: center;
+  grid-auto-flow: row
 }
 
 .card {
@@ -284,7 +286,7 @@ section h2::after {
 
 .card h3 {
   font-family: 'Playfair Display', serif;
-  font-size: 1.05rem;
+  font-size: 1.2rem;
   color: var(--turquesa-claro);
   margin-bottom: 8px;
 }
@@ -344,6 +346,23 @@ section h2::after {
 }
 
 .marca-card p strong { color: var(--marron-oscuro); font-weight: 600; }
+
+/* ================================================
+   DATO RECOMENDACIÓN
+================================================ */
+.dato-recomendación {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  background: rgba(168,216,216,0.2);
+  border-left: 4px solid var(--turquesa-medio);
+  border-radius: 8px;
+  padding: 16px 18px;
+  margin-top: 18px;
+}
+
+.dato-destacado .icono-lab { font-size: 1.5rem; line-height: 1; }
+.dato-destacado p { margin: 0; font-size: 0.9rem; }
 
 /* ================================================
    SECCIÓN VERIFICAR
@@ -486,12 +505,12 @@ button:active { transform: translateY(0); }
   background: var(--blanco);
   border-radius: 8px;
   padding: 12px 14px;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   border: 1px solid rgba(95,179,179,0.2);
 }
 
-.tip-item strong { display: block; margin-bottom: 4px; color: var(--marron-oscuro); }
-.tip-item p { margin: 0; color: var(--texto-suave); }
+.tip-item strong { display: block; margin-bottom: 1px; color: var(--marron-oscuro); }
+.tip-item p { margin: 3px; color: var(--texto-suave); }
 
 /* ================================================
    ENLACES
