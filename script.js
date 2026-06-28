@@ -64,3 +64,57 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
 });
+
+// ================================
+// ANIMACIÓN SELLOS — eco partículas
+// ================================
+const ecoParticulas = ["🌿","🍃","🌱","♻️","💧","🌊","🌸","🌾","🍀","✨"];
+
+function lanzarParticula(card) {
+  const rect = card.getBoundingClientRect();
+  const cx = rect.left + Math.random() * rect.width;
+  const cy = rect.top + Math.random() * rect.height;
+
+  const el = document.createElement("div");
+  el.className = "eco-particula";
+
+  const tx = (Math.random() - 0.5) * 120;
+  const ty = -(40 + Math.random() * 80);
+  const rot = (Math.random() - 0.5) * 360 + "deg";
+  const dur = (0.6 + Math.random() * 0.5) + "s";
+  const emoji = ecoParticulas[Math.floor(Math.random() * ecoParticulas.length)];
+
+  el.textContent = emoji;
+  el.style.cssText = `left:${cx}px; top:${cy}px; --tx:${tx}px; --ty:${ty}px; --rot:${rot}; --dur:${dur};`;
+  document.body.appendChild(el);
+  setTimeout(() => el.remove(), 1200);
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  const sellosCards = document.querySelectorAll(".sello-card-v");
+
+  // Entrada al hacer scroll
+  const observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+
+  sellosCards.forEach(function (card, i) {
+    card.style.transitionDelay = (i * 0.15) + "s";
+    observer.observe(card);
+
+    // Partículas al hover
+    let intervalo = null;
+    card.addEventListener("mouseenter", function () {
+      intervalo = setInterval(() => lanzarParticula(card), 120);
+    });
+    card.addEventListener("mouseleave", function () {
+      clearInterval(intervalo);
+      intervalo = null;
+    });
+  });
+});

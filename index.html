@@ -6,6 +6,7 @@
   <title>Maquillaje & Microplásticos — Impacto en el Agua</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
 
@@ -24,21 +25,50 @@
     <div class="header-inner">
       <h1>Maquillaje &amp; Microplásticos</h1>
       <p class="subtitulo">Lo que usamos en nuestra piel termina en el agua,</p>
-      <p class="subtitulo">conocé su impacto y cómo elegir mejor</p>
+      <p class="subtitulo">conocé su impacto y elegí mejor.</p>
     </div>
   </header>
 
   <!-- NAVBAR -->
-  <nav>
-    <ul>
-      <li><a href="#verificar">Verificá</a></li>
-      <li><a href="#desechos">Nuestros Desechos</a></li>
-      <li><a href="#maquillaje">Maquillaje</a></li>
-      <li><a href="#contamina">¿Contamina?</a></li>
-      <li><a href="#nos-afecta">Nos Afecta</a></li>
-      <li><a href="#marcas">Marcas Seguras</a></li>
-    </ul>
-  </nav>
+  <nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand text-white" href="#">Inicio</a> 
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#verificar">Verifica tus productos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#nuestros-desechos">Nuestros Desechos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#maquillaje">Maquillaje</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contamina">¿Contamina?</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#nos-afecta">Nos Afecta</a>
+        </li>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Más Info
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item" href="#marcas-seguras">Marcas Seguras</a></li>
+            <li><a class="dropdown-item" href="#sellos">Sellos Informativos</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
   <main>
 
@@ -84,13 +114,13 @@
     </section>
 
     <!-- SECCIÓN 2: DESECHOS -->
-    <section id="desechos">
+    <section id="nuestros-desechos">
       <h2>¿Dónde acaban nuestros desechos?</h2>
       <div class="section-content">
         <div class="text-block">
           <p>
-            Gran parte de los residuos que generamos a diario — plásticos, envases de cosméticos, 
-            microesferas de productos de cuidado personal — terminan en ríos, arroyos y el mar. 
+            Gran parte de los residuos que generamos a diario -plásticos, envases de cosméticos, 
+            microesferas de productos de cuidado personal- terminan en ríos, arroyos y el mar. 
             Al degradarse, forman partículas diminutas llamadas <strong>microplásticos</strong> 
             que se filtran en el agua y afectan a toda la cadena alimentaria.
           </p>
@@ -102,7 +132,7 @@
             </a>.
           </p>
         </div>
-        <img class="imagen-seccion" src="img-desechos.jpg" 
+        <img class="imagen-seccion" src="/img/img-desechos.jpg" 
              alt="Voluntarios limpiando residuos plásticos en una playa costera"/>
       </div>
       <p class="imagen-caption">Voluntarios en acción: limpiar las costas es una de las formas más directas de reducir el impacto</p>
@@ -128,7 +158,7 @@
             <p>Buscá en la etiqueta términos como <strong>Polyethylene, Nylon-12, Polypropylene, Acrylates Copolymer</strong> — son microplásticos frecuentes en cosméticos.</p>
           </div>
         </div>
-        <img class="imagen-seccion" src="img-ecofriendly.jpg"
+        <img class="imagen-seccion" src="/img/img-ecofriendly.jpg"
              alt="Plásticos flotando bajo el agua del océano"/>
       </div>
       <p class="imagen-caption">Lo que tiramos por el desagüe llega hasta acá</p>
@@ -150,51 +180,80 @@
             esta cadena de contaminación.
           </p>
         </div>
-        <img class="imagen-seccion" src="img-contamina.png"
+        <img class="imagen-seccion" src="/img/img-contamina.png"
              alt="Infografía sobre contaminación plástica en el océano"/>
       </div>
       <p class="imagen-caption">En 2050 habrá más plástico que peces en los océanos</p>
     </section>
-
-    <!-- SECCIÓN 5: NOS AFECTA -->
-    <section id="nos-afecta" class="seccion-oscura">
+    
+     <!-- SECCIÓN 5: NOS AFECTA -->
+     <section id="nos-afecta" class="seccion-oscura">
       <h2>¿Cómo nos afecta como consumidores?</h2>
-      <div class="cards-grid">
-
-        <div class="card">
-          <div class="card-icono">🐟</div>
-          <h3>A través de los alimentos</h3>
-          <p>Los microplásticos ingeridos por peces y mariscos llegan a nuestra mesa. 
-             Se han detectado en agua de canilla, sal marina y mariscos de consumo masivo.</p>
+  
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+    
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          🐟 A través de los alimentos
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          Los microplásticos ingeridos por peces y mariscos llegan a nuestra mesa. 
+          Se han detectado en agua de canilla, sal marina y mariscos de consumo masivo.
         </div>
-
-        <div class="card">
-          <div class="card-icono">💄</div>
-          <h3>A través de la piel</h3>
-          <p>Partículas de cosméticos con microplásticos pueden penetrar la piel o ser 
-             inhaladas. Algunas investigaciones vinculan la exposición crónica con 
-             disrupciones hormonales.</p>
-        </div>
-
-        <div class="card">
-          <div class="card-icono">💧</div>
-          <h3>A través del agua</h3>
-          <p>El agua potable puede contener microplásticos que no son eliminados por los 
-             sistemas de tratamiento convencionales. Un problema silencioso de salud pública.</p>
-        </div>
-
-        <div class="card">
-          <div class="card-icono">🌊</div>
-          <h3>Impacto en el turismo costero</h3>
-          <p>La contaminación afecta directamente a comercios y comunidades costeras. 
-             Playas con basura plástica generan pérdidas millonarias en turismo cada año.</p>
-        </div>
-
       </div>
-    </section>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+          💄 A través de la piel
+        </button>
+      </h2>
+      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          Partículas de cosméticos con microplásticos pueden penetrar la piel o ser 
+          inhaladas. Algunas investigaciones vinculan la exposición crónica con 
+          disrupciones hormonales.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+          💧 A través del agua
+        </button>
+      </h2>
+      <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          El agua potable puede contener microplásticos que no son eliminados por los 
+          sistemas de tratamiento convencionales. Un problema silencioso de salud pública.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+          🌊 Impacto en el turismo costero
+        </button>
+      </h2>
+      <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          La contaminación afecta directamente a comercios y comunidades costeras. 
+          Playas con basura plástica generan pérdidas millonarias en turismo cada año.
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
 
     <!-- SECCIÓN 6: MARCAS -->
-    <section id="marcas">
+    <section id="marcas-seguras">
       <h2>Marcas con fórmulas más seguras</h2>
       <p class="seccion-intro">
         Estas marcas disponibles en Argentina cuentan con registro ANMAT y ofrecen líneas 
@@ -255,6 +314,60 @@
       </div>
     </section>
 
+<!-- SECCIÓN 7: SELLOS -->
+<section id="sellos">
+  <h2>Sellos que podés buscar</h2>
+
+  <div class="sellos-hero">
+    <img src="img/imagen-sellos-hero.png"
+         alt="Productos de belleza consciente con sellos de certificación ambiental"
+         class="sellos-hero-img"/>
+  </div>
+    <p class="seccion-intro">
+    Estos certificados aparecen en productos cosméticos que cumplen estándares ambientales.
+    Aprendé a reconocerlos en la etiqueta antes de comprar.
+  </p>
+
+  <div class="sellos-lista">
+
+  <div class="sello-card-v">
+    <img src="img/sello-bioproducto.png" alt="Sello Bioproducto Argentino" class="sello-img-v"/>
+    <div class="sello-info-v">
+      <h3>Bioproducto Argentino</h3>
+      <p>Certifica que el producto está elaborado con ingredientes de origen biológico producidos en Argentina. Lo emite el INTA y el Ministerio de Agricultura.</p>
+      <span class="sello-origen">🇦🇷 Argentina</span>
+    </div>
+  </div>
+
+  <div class="sello-card-v">
+    <img src="img/sello-organico.png" alt="Sello Orgánico Argentina" class="sello-img-v"/>
+    <div class="sello-info-v">
+      <h3>Orgánico Argentina</h3>
+      <p>Garantiza que los ingredientes se produjeron sin agroquímicos ni sustancias sintéticas. Regulado por el SENASA.</p>
+      <span class="sello-origen">🇦🇷 Argentina</span>
+    </div>
+  </div>
+
+  <div class="sello-card-v">
+    <img src="img/sello-sustentabilidad.png" alt="Sello Argentino de Sustentabilidad Ambiental" class="sello-img-v"/>
+    <div class="sello-info-v">
+      <h3>Sustentabilidad Ambiental</h3>
+      <p>Reconoce a empresas con prácticas ambientales responsables en toda su cadena de producción. Emitido por el Ministerio de Ambiente.</p>
+      <span class="sello-origen">🇦🇷 Argentina</span>
+    </div>
+  </div>
+
+  <div class="sello-card-v">
+    <img src="img/sello-zero-plastic.png" alt="Zero Plastic Inside" class="sello-img-v"/>
+    <div class="sello-info-v">
+      <h3>Zero Plastic Inside</h3>
+      <p>Sello internacional que certifica que el producto no contiene microplásticos en su fórmula. Uno de los más específicos para cosméticos.</p>
+      <span class="sello-origen">🌍 Internacional</span>
+    </div>
+  </div>
+
+</div>
+</section>
 
   </main>
 
@@ -273,5 +386,6 @@
   </footer>
 
   <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
