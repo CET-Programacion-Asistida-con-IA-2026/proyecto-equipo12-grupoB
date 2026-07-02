@@ -376,6 +376,8 @@ section h2::after {
 
 .marca-card p strong { color: var(--marron-oscuro); font-weight: 600; }
 
+.marca-card a { color: var(--marron-oscuro); border-bottom-color: transparent; }
+
 /* ================================================
    DATO RECOMENDACIÓN
 ================================================ */
@@ -417,48 +419,7 @@ section h2::after {
 }
 
 .verificar-bloque p { margin-bottom: 12px; font-size: 0.92rem; }
-
-/* Pasos ANMAT */
-.pasos-anmat {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  margin-bottom: 20px;
-  padding: 0;
-  counter-reset: pasos;
-}
-
-.pasos-anmat li {
-  display: flex;
-  align-items: flex-start;
-  gap: 14px;
-  font-size: 0.9rem;
-  line-height: 1.6;
-}
-
-.paso-num {
-  min-width: 28px;
-  height: 28px;
-  background: var(--turquesa-medio);
-  color: white;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.8rem;
-  font-weight: 600;
-  flex-shrink: 0;
-}
-
-.aviso-anmat {
-  background: rgba(201,115,106,0.1);
-  border-left: 3px solid var(--rosa-acento);
-  border-radius: 6px;
-  padding: 12px 14px;
-  font-size: 0.88rem !important;
-  color: var(--marron-oscuro) !important;
-}
+.verificar-bloque a { color: var(--marron-oscuro); border-bottom-color: transparent; }
 
 /* ================================================
    FORMULARIO

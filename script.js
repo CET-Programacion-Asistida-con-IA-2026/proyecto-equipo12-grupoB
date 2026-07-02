@@ -43,7 +43,7 @@ function consultarIngredientes() {
     if(esPlastico == true){
         resultado.style.borderLeftColor = "#c9736a";
         resultado.innerHTML = "🔴 <strong>" + "</strong> Tu producto contiene microplásticos.<br><br>" +
-                              "Podés buscar alternativas en la sección de recomendaciones";
+                              "Te invitamos a buscar alternativas en la sección de recomendaciones";
     }else{
         resultado.style.borderLeftColor = "#5fb3b3";
         resultado.innerHTML = "🟢 <strong>" + "</strong> Tu producto pareciera ser libre de microplásticos.<br><br>" +
