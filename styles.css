@@ -50,11 +50,12 @@ header {
   text-align: center;
   padding: 80px 24px 90px;
   background:
-    radial-gradient(ellipse at 20% 80%, rgba(201,115,106,0.22) 0%, transparent 55%),
-    radial-gradient(ellipse at 80% 15%, rgba(95,179,179,0.25) 0%, transparent 50%),
-    linear-gradient(155deg, var(--marron-oscuro) 0%, var(--turquesa-oscuro) 55%, var(--turquesa-medio) 100%);
+    radial-gradient(ellipse at 80% 20%, rgba(255, 160, 140, 0.4) 0%, transparent 60%), /* foco de luz salmón fuerte arriba a la derecha */
+    radial-gradient(ellipse at 20% 80%, rgba(44, 62, 64, 0.6) 0%, transparent 60%), /* foco de luz sutil verde esmeralda abajo a la izquierda */
+    linear-gradient(135deg, #68969b 0%, #c1887e 100%);   /* degradado base */
   color: var(--blanco);
   position: relative;
+  overflow: hidden;
 }
 
 header::before {
@@ -67,55 +68,71 @@ header::before {
 
 .header-inner {
   position: relative;
-  z-index: 1;
-  max-width: 700px;
+  z-index: 2;
+  max-width: 1200px;
 }
 
-header .logo-ola {
+/* El contenedor envuelve ambas olas */
+.olas-container {
   position: absolute;
-  top: 10px; 
-  left: 30px;
-  display: block;
-  width: 100px; /* Tamaño de la ola */
-  z-index: 2; /* Encima del fondo */
+  bottom: -5px; 
+  left: 0;
+  width: 100%;
+  height: 140px;
+  z-index: 1;
 }
 
-header h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(2.2rem, 6vw, 4.5rem);
-  font-weight: 700;
+/* La base para ambas olas */
+.ola {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200%; /*  Ocupan 2 pantallas de ancho */
+  height: 100%;
+}
+
+.ola-trasera {
+  animation: flujoInfinito 22s linear infinite; /* Más segundos = Más lento */
+}
+
+.ola-delantera {
+  animation: flujoInfinito 10s linear infinite; /* Menos segundos = Más rápido */
+}
+
+@keyframes flujoInfinito {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } 
+}
+
+header .header-inner h1 {
+  font-family: 'Playfair Display', serif !important;
+  font-size: clamp(2.5rem, 5vw, 4rem) !important;
+  font-weight: 700 !important;
   line-height: 1.1;
   margin-bottom: 18px;
+  white-space: nowrap; 
 }
 
 header .subtitulo {
-  font-size: clamp(0.95rem, 2vw, 1.1rem);
-  opacity: 0.85;
+  font-size: clamp(1rem, 2.2vw, 1.2rem);
+  opacity: 0.9;
   font-weight: 300;
-  max-width: 540px;
+  max-width: 100%;
   margin: 0 auto;
+  white-space: nowrap;
 }
 
-header::after {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: -18px; left: 0;
-  width: 100%; height: 22px;
-  background: var(--fondo);
-  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
-}
 
 /* ================================================
     NAVBAR (Adaptado a Bootstrap)
 ================================================ */
 nav.navbar {
-  background: var(--marron-oscuro) !important; /* !important asegura ganarle a Bootstrap */
+  background: #2c3e40 !important; /* !important asegura ganarle a Bootstrap */
   padding: 0 24px;
   position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: 0 2px 16px rgba(74,46,30,0.25);
+  box-shadow: 0 2px 16px rgba(44, 62, 64, 0.4); /* Sombra adaptada al nuevo color */
 }
 
 /* Estilo para los enlaces del menú */
@@ -255,10 +272,13 @@ section h2::after {
    SECCIÓN OSCURA (nos afecta)
 ================================================ */
 .seccion-oscura {
-  background: linear-gradient(135deg, var(--marron-oscuro) 0%, #2e5555 100%);
-  border-radius: 24px;
-  margin: 0 36px;
-  color: var(--crema);
+  background: 
+   radial-gradient(ellipse at 80% 20%, #61868a 0%, transparent 60%),
+   radial-gradient(ellipse at 20% 80%, rgba(71, 136, 136, 0.6) 0%, transparent 60%),
+   linear-gradient(135deg, #2c3e40 0%, #c1887e);
+   border-radius: 24px;
+   margin: 0 36px;
+   color: var(--crema);
 }
 
 .seccion-oscura h2 {
@@ -377,7 +397,7 @@ section h2::after {
    SECCIÓN VERIFICAR
 ================================================ */
 #verificar {
-  background: var(--crema);
+  background: #f4f7f6;
   border-radius: 24px;
   margin: 0 36px 80px;
   margin-top: 60px ; 
@@ -542,10 +562,11 @@ a:hover {
    FOOTER
 ================================================ */
 footer {
-  background: var(--marron-oscuro);
+  background: #1a2a26;
   color: var(--crema);
   text-align: center;
   padding: 48px 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .footer-inner { max-width: 500px; margin: 0 auto; }
@@ -554,11 +575,12 @@ footer {
   display: block;
   margin: -10px auto 10px; /* -15px sube el logo, auto lo mantiene centrado, 24px espacio abajo */ 
   width: 60px;
+  filter: brightness(0.8) invert(0.1); /* hace que el logo ola también se vea bien sobre el fondo oscuro */
 }
 
 footer p {
   font-size: 0.85rem;
-  color: rgba(232,213,196,0.7);
+  color: rgba(232, 213, 196, 0.6);
   margin-bottom: 6px;
   line-height: 1.7;
 }
@@ -583,6 +605,18 @@ footer a:hover { color: var(--turquesa-claro); }
   .marcas-grid { grid-template-columns: 1fr; }
   .cards-grid { grid-template-columns: 1fr 1fr; }
 }
+
+header h1 {
+    white-space: normal; /* Permite que el texto baje de renglón en el celu */
+    font-size: 2.8rem; /* Achica un poco la letra */
+    line-height: 1.2;
+}
+
+header .subtitulo {
+    padding: 0 15px; /* Evita que el texto toque los bordes de la pantalla */
+     white-space: normal;
+}
+
 
 @media (max-width: 480px) {
   .cards-grid { grid-template-columns: 1fr; }
@@ -855,3 +889,4 @@ footer a:hover { color: var(--turquesa-claro); }
   padding-top: 0.5rem; /* Mantiene el ajuste de espacio que corregimos antes */
   padding-bottom: 1rem;
 }
+

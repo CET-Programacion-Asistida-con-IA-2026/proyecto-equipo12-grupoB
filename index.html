@@ -12,21 +12,21 @@
 
   <!-- HEADER -->
   <header>
-    <svg class="logo-ola" viewBox="0 -10 100 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M4 28 C14 12, 26 12, 36 28 C46 44, 58 44, 68 28 C72 20, 76 21, 78 24" 
-              stroke="white" stroke-width="4" stroke-linecap="round" fill="none"/> <!-- Onda principal -->
-        <path d="M4 36 C12 26, 20 26, 28 36 C36 46, 44 46, 52 36 C60 26, 68 26, 76 36"
-              stroke="rgba(255,255,255,0.4)" stroke-width="2.5" stroke-linecap="round" fill="none"/> <!-- Onda secundaria -->
-       <circle cx="16" cy="11" r="3" fill="rgba(255,192,180,0.85)"/>
-       <circle cx="26" cy="7" r="1.5" fill="rgba(255,255,255,0.8)"/>
-       <circle cx="45" cy="12" r="2" fill="rgba(255,192,180,0.6)"/>
-       <circle cx="56" cy="16" r="2.5" fill="rgba(255,255,255,0.7)"/>
-      </svg>
     <div class="header-inner">
-      <h1>Maquillaje &amp; Microplásticos</h1>
-      <p class="subtitulo">Lo que usamos en nuestra piel termina en el agua,</p>
-      <p class="subtitulo">conocé su impacto y elegí mejor.</p>
+      <h1>Cosméticos &amp; Microplásticos</h1>
+      <p class="subtitulo">Lo que usamos en nuestra piel termina en el agua, conocé su impacto y elegí mejor.</p>   
     </div>
+   <!-- Ola gigante al fondo del header -->
+   <div class="olas-container">
+     <svg class="ola ola-trasera" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2880 320" preserveAspectRatio="none">
+       <path fill="rgba(255, 255, 255, 0.14)" d="M0,160 Q360,280 720,160 T1440,160 L1440,320 L0,320 Z"></path>  
+        <path transform="translate(1440, 0)" fill="rgba(255, 255, 255, 0.14)" d="M0,160 Q360,280 720,160 T1440,160 L1440,320 L0,320 Z"></path>
+        </svg>
+       <svg class="ola ola-delantera" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2880 320" preserveAspectRatio="none">
+       <path fill="rgba(255, 255, 255, 0.27)" d="M0,192 Q360,80 720,192 T1440,192 L1440,320 L0,320 Z"></path>
+        <path transform="translate(1440, 0)" fill="rgba(255, 255, 255, 0.27)" d="M0,192 Q360,80 720,192 T1440,192 L1440,320 L0,320 Z"></path>
+       </svg>
+   </div>
   </header>
 
   <!-- NAVBAR -->
@@ -185,10 +185,8 @@
      <!-- SECCIÓN 5: NOS AFECTA -->
      <section id="nos-afecta" class="seccion-oscura">
       <h2>¿Cómo nos afecta como consumidores?</h2>
-  
-    <div class="accordion accordion-flush" id="accordionFlushExample">
-    
-    <div class="accordion-item">
+     <div class="accordion accordion-flush" id="accordionFlushExample">
+     <div class="accordion-item">
       <h2 class="accordion-header">
         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
           🐟 A través de los alimentos
@@ -244,7 +242,6 @@
         </div>
       </div>
     </div>
-
   </div>
 </section>
 
