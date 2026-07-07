@@ -229,27 +229,6 @@ section h2::after {
 
 .text-block p { margin-bottom: 14px; }
 
-/* ================================================
-   IMÁGENES
-================================================ */
-.imagen-seccion {
-  width: 100%;
-  border-radius: 14px;
-  object-fit: cover;
-  object-position:center 20%;
-  max-height: 400px;
-  display: block;
-  border: 3px solid var(--turquesa-claro);
-  box-shadow: 0 6px 24px rgba(46,125,125,0.12);
-}
-
-.imagen-caption {
-  font-size: 0.78rem;
-  color: var(--texto-suave);
-  text-align: center;
-  margin-top: 10px;
-  font-style: italic;
-}
 
 /* ================================================
    DATO DESTACADO
@@ -279,6 +258,7 @@ section h2::after {
    border-radius: 24px;
    margin: 0 36px;
    color: var(--crema);
+   margin-top: 60px;
 }
 
 .seccion-oscura h2 {
@@ -851,3 +831,17 @@ header .subtitulo {
   padding-bottom: 1rem;
 }
 
+/* ================================================
+    Carousel
+================================================ */
+.carousel-control-prev,
+.carousel-control-next{
+    background: transparent !important;
+    opacity: 1;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover{
+    background: transparent !important;
+    opacity: 1;
+}
