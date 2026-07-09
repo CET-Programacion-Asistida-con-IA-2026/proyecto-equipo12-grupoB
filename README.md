@@ -33,7 +33,7 @@ La plataforma fomenta el consumo responsable al capacitar a las usuarias para el
 
 Para estructurar nuestra idea, desarrollamos el siguiente documento que resume nuestro público objetivo, el problema central y las funcionalidades clave de la web:
 
-![One Page Plan - Belleza Consciente, Oceano Vivo](one-page-plan.png)
+![One Page Plan - Belleza Consciente, Oceano Vivo](Img/one-page-plan.png)
 
 ### Funcionalidades Clave ###
 
