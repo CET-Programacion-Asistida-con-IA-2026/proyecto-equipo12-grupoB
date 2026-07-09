@@ -48,7 +48,7 @@ La plataforma prioriza una interfaz limpia, visual y fácil de usar, permitiendo
 ### Explicación del Concepto Visual:
 Nuestra identidad visual prioriza una estética limpia y minimalista. Nos inspiramos en los colores de los ecosistemas marinos que buscamos proteger, creando un contraste directo con los tonos de la contaminación.
 
-![Moodboard](Img/moodboard.png)
+![Moodboard](Img/Moodboard.png)
 
 Para nuestra interfaz, definimos las siguientes bases:
 | Elemento | Descripción e Inspiración |
