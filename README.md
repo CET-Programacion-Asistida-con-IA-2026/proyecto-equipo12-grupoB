@@ -35,6 +35,8 @@ Para estructurar nuestra idea inicial, desarrollamos el siguiente documento que 
 
 ![One Page Plan - Belleza Consciente, Oceano Vivo](Img/one-page-plan.png)
 
+Si bien este fue nuestro punto de inicio, hay ideas que naturalmente fueron cambiando al avanzar con el proyecto.
+
 ### Funcionalidades Clave ###
 
 * **Verificador Interactivo de Productos:** Desarrollamos un verificador con JavaScript donde el usuario ingresa los ingredientes de su producto (que se pueden encontrar en la etiqueta del mismo o buscándolos en internet) y el sistema detecta si contiene microplásticos, en tal caso recomendando el uso de otras opciones más "eco-friendly". A pesar de que intentamos incluir la mayor cantidad posible de microplásticos comunmente encontrados en cosméticos, incluso si el sistema no encuentra estos componentes en el producto, brindamos una lista creada por la organización Beat The Microbead para que los usuarios puedan revisar de manera más minuciosa si el resultado del verificador no los convence. 
@@ -47,6 +49,7 @@ La plataforma prioriza una interfaz limpia, visual y fácil de usar, permitiendo
 ## 🎨 Diseño (Moodboard)
 ### Explicación del Concepto Visual:
 Nuestra identidad visual prioriza una estética limpia y minimalista. Nos inspiramos en los colores de los ecosistemas marinos que buscamos proteger, creando un contraste directo con los tonos de la contaminación.
+Así como con el one page plan, varios conceptos planeados originalmente en el moodboard fueron evolucionando con el pasar de las clases.
 
 ![Moodboard](Img/Moodboard.png)
 
