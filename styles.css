@@ -110,7 +110,7 @@ header .header-inner h1 {
   font-weight: 700 !important;
   line-height: 1.1;
   margin-bottom: 18px;
-  white-space: nowrap; 
+  white-space: break-spaces; 
 }
 
 header .subtitulo {
@@ -482,6 +482,16 @@ button:active { transform: translateY(0); }
 
 .tip-item strong { display: block; margin-bottom: 1px; color: var(--marron-oscuro); }
 .tip-item p { margin: 3px; color: var(--texto-suave); }
+
+.tip-lista {
+  background: var(--blanco);
+  border-radius: 8px;
+  padding: 12px 14px;
+  font-size: 0.9rem;
+  border: 1px solid rgba(95,179,179,0.2);
+}
+
+.tip-lista p { margin: 3px; color: var(--texto-suave); }
 
 /* ================================================
    ENLACES
