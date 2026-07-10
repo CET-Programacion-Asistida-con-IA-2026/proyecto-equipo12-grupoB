@@ -43,11 +43,11 @@ function consultarIngredientes() {
     if(esPlastico == true){
         resultado.style.borderLeftColor = "#c9736a";
         resultado.innerHTML = "🔴 <strong>" + "</strong> Tu producto contiene microplásticos.<br><br>" +
-                              "Te invitamos a buscar alternativas en la sección de recomendaciones";
+                              "Te invitamos a buscar alternativas en la sección de marcas recomendadas";
     }else{
         resultado.style.borderLeftColor = "#5fb3b3";
         resultado.innerHTML = "🟢 <strong>" + "</strong> Tu producto pareciera ser libre de microplásticos.<br><br>" +
-                              "Igualmente recomendamos revisar la etiqueta y verificar el registro ANMAT en <a href='https://www.anmat.gob.ar' target='_blank'>anmat.gob.ar</a>.";
+                              "Igualmente sugerimos revisar la etiqueta y verificar el registro ANMAT en <a href='https://www.anmat.gob.ar' target='_blank'>anmat.gob.ar</a>.";
     }
 
   // Limpiar input
