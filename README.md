@@ -1,6 +1,6 @@
-# Maquillaje & Microplásticos - Equipo 12B 
+# Cosméticos & Microplásticos
 ## Sitio Web con Impacto Social
-En este repositorio, se presenta el sitio web "Maquillaje & Microplásticos" realizado durante el curso de programación frontend de CET.
+En este repositorio, se presenta el sitio web "Cosméticos & Microplásticos" realizado durante el curso de programación frontend de CET.
 
 ## 📄 Descripción del proyecto
 **¿Sabías que tu rutina de belleza diaria podría estar contaminando tu cuerpo y los océanos?**
